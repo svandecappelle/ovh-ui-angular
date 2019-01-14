@@ -2,7 +2,6 @@ describe("ouiHeaderTabs", () => {
     let TestUtils;
     let $timeout;
 
-    beforeEach(angular.mock.module("oui.dropdown"));
     beforeEach(angular.mock.module("oui.header-tabs"));
     beforeEach(angular.mock.module("oui.test-utils"));
 
