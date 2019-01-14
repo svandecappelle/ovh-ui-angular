@@ -1,8 +1,9 @@
+import Select from "@ovh-ui/oui-select";
 import SelectPicker from "./select-picker.component";
 import SelectPickerSection from "./section/select-picker-section.component";
 
 export default angular
-    .module("oui.select-picker", [])
+    .module("oui.select-picker", [Select])
     .component("ouiSelectPicker", SelectPicker)
     .component("ouiSelectPickerSection", SelectPickerSection)
     .name;

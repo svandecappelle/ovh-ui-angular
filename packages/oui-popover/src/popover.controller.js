@@ -109,7 +109,7 @@ export default class PopoverController {
         this.$document.on("keydown", evt => this.triggerKeyHandler(evt));
 
         // Deprecated: Support for component `oui-popover-trigger`
-        if (this.isComponent) {
+        if (this.isComponent && this.$triggerElement) {
             this.$triggerElement.attr("aria-expanded", true);
             return;
         }
@@ -124,7 +124,7 @@ export default class PopoverController {
         this.$document.off("keydown", evt => this.triggerKeyHandler(evt));
 
         // Deprecated: Support for component `oui-popover-trigger`
-        if (this.isComponent) {
+        if (this.isComponent && this.$triggerElement) {
             this.$triggerElement.attr("aria-expanded", false);
             return;
         }

@@ -8,7 +8,6 @@ describe("ouiField", () => {
     beforeEach(angular.mock.module("oui.checkbox"));
     beforeEach(angular.mock.module("oui.radio"));
     beforeEach(angular.mock.module("oui.select"));
-    beforeEach(angular.mock.module("oui.popover"));
     beforeEach(angular.mock.module("oui.test-utils"));
 
     beforeEach(inject((_$timeout_, _TestUtils_) => {

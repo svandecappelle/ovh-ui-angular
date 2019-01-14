@@ -50,11 +50,8 @@ describe("ouiDualList", () => {
         target
     });
 
-    beforeEach(angular.mock.module("oui.button"));
     beforeEach(angular.mock.module("oui.dual-list"));
     beforeEach(angular.mock.module("oui.dual-list.configuration"));
-    beforeEach(angular.mock.module("oui.search"));
-    beforeEach(angular.mock.module("oui.spinner"));
     beforeEach(angular.mock.module("oui.test-utils"));
 
     beforeEach(inject((_$timeout_, _TestUtils_) => {

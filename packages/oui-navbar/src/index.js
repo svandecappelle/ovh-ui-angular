@@ -1,5 +1,4 @@
 import KEYBOARD_KEYS from "./keyboard-keys.constant";
-
 import Navbar from "./navbar.component";
 import NavbarBrand from "./brand/navbar-brand.component";
 import NavbarConfigurationProvider from "./navbar.provider";
@@ -10,9 +9,11 @@ import NavbarLink from "./link/navbar-link.component";
 import NavbarMenu from "./menu/navbar-menu.component";
 import NavbarNotification from "./notification/navbar-notification.component";
 import NavbarToggler from "./toggler/navbar-toggler.component";
+import Spinner from "@ovh-ui/oui-spinner";
 
 export default angular
     .module("oui.navbar", [
+        Spinner,
         "ngAria",
         "ngSanitize"
     ])
