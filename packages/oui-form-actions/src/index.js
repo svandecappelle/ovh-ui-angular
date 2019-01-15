@@ -1,8 +1,12 @@
+import angular from "angular";
 import FormActions from "./form-actions.component";
 import FormActionsProvider from "./form-actions.provider";
 
-export default angular
-    .module("oui.form-actions", [])
+const moduleName = "oui.form-actions";
+
+angular
+    .module(moduleName, [])
     .component("ouiFormActions", FormActions)
-    .provider("ouiFormActionsConfiguration", FormActionsProvider)
-    .name;
+    .provider("ouiFormActionsConfiguration", FormActionsProvider);
+
+export default moduleName;

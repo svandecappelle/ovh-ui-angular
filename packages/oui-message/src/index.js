@@ -1,6 +1,10 @@
+import angular from "angular";
 import Message from "./message.component.js";
 
-export default angular
-    .module("oui.message", [])
-    .component("ouiMessage", Message)
-    .name;
+const moduleName = "oui.message";
+
+angular
+    .module(moduleName, [])
+    .component("ouiMessage", Message);
+
+export default moduleName;

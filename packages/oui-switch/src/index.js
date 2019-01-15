@@ -1,6 +1,10 @@
+import angular from "angular";
 import Switch from "./switch.component.js";
 
-export default angular
-    .module("oui.switch", [])
-    .component("ouiSwitch", Switch)
-    .name;
+const moduleName = "oui.switch";
+
+angular
+    .module(moduleName, [])
+    .component("ouiSwitch", Switch);
+
+export default moduleName;

@@ -1,8 +1,12 @@
+import angular from "angular";
 import Tabs from "./tabs.component";
 import TabsItem from "./item/tabs-item.component";
 
-export default angular
-    .module("oui.tabs", [])
+const moduleName = "oui.tabs";
+
+angular
+    .module(moduleName, [])
     .component("ouiTabs", Tabs)
-    .component("ouiTabsItem", TabsItem)
-    .name;
+    .component("ouiTabsItem", TabsItem);
+
+export default moduleName;

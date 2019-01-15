@@ -1,8 +1,12 @@
+import angular from "angular";
 import Calendar from "./calendar.component.js";
 import CalendarProvider from "./calendar.provider";
 
-export default angular
-    .module("oui.calendar", [])
+const moduleName = "oui.calendar";
+
+angular
+    .module(moduleName, [])
     .component("ouiCalendar", Calendar)
-    .provider("ouiCalendarConfiguration", CalendarProvider)
-    .name;
+    .provider("ouiCalendarConfiguration", CalendarProvider);
+
+export default moduleName;

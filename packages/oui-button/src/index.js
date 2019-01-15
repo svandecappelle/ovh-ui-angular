@@ -1,6 +1,10 @@
+import angular from "angular";
 import Button from "./button.component.js";
 
-export default angular
-    .module("oui.button", [])
-    .component("ouiButton", Button)
-    .name;
+const moduleName = "oui.button";
+
+angular
+    .module(moduleName, [])
+    .component("ouiButton", Button);
+
+export default moduleName;

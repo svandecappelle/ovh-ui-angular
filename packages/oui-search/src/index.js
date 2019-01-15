@@ -1,7 +1,11 @@
+import angular from "angular";
 import Autocomplete from "@ovh-ui/oui-autocomplete";
 import Search from "./search.component";
 
-export default angular
-    .module("oui.search", [Autocomplete])
-    .component("ouiSearch", Search)
-    .name;
+const moduleName = "oui.search";
+
+angular
+    .module(moduleName, [Autocomplete])
+    .component("ouiSearch", Search);
+
+export default moduleName;

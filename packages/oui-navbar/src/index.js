@@ -1,3 +1,6 @@
+import "angular-aria";
+import "angular-sanitize";
+import angular from "angular";
 import KEYBOARD_KEYS from "./keyboard-keys.constant";
 import Navbar from "./navbar.component";
 import NavbarBrand from "./brand/navbar-brand.component";
@@ -11,11 +14,13 @@ import NavbarNotification from "./notification/navbar-notification.component";
 import NavbarToggler from "./toggler/navbar-toggler.component";
 import Spinner from "@ovh-ui/oui-spinner";
 
-export default angular
-    .module("oui.navbar", [
-        Spinner,
+const moduleName = "oui.navbar";
+
+angular
+    .module(moduleName, [
         "ngAria",
-        "ngSanitize"
+        "ngSanitize",
+        Spinner
     ])
     .constant("KEYBOARD_KEYS", KEYBOARD_KEYS)
     .component("ouiNavbar", Navbar)
@@ -27,5 +32,6 @@ export default angular
     .component("ouiNavbarNotification", NavbarNotification)
     .component("ouiNavbarToggler", NavbarToggler)
     .directive("ouiNavbarGroup", NavbarGroup)
-    .provider("ouiNavbarConfiguration", NavbarConfigurationProvider)
-    .name;
+    .provider("ouiNavbarConfiguration", NavbarConfigurationProvider);
+
+export default moduleName;

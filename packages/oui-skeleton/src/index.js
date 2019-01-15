@@ -1,6 +1,10 @@
+import angular from "angular";
 import Skeleton from "./skeleton.component.js";
 
-export default angular
-    .module("oui.skeleton", [])
-    .component("ouiSkeleton", Skeleton)
-    .name;
+const moduleName = "oui.skeleton";
+
+angular
+    .module(moduleName, [])
+    .component("ouiSkeleton", Skeleton);
+
+export default moduleName;

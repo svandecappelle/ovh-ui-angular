@@ -1,3 +1,4 @@
+import angular from "angular";
 import Chips from "@ovh-ui/oui-chips";
 import Criteria from "./criteria.component";
 import CriteriaAdder from "./adder/criteria-adder.component";
@@ -7,8 +8,10 @@ import Field from "@ovh-ui/oui-field";
 import Search from "@ovh-ui/oui-search";
 import Select from "@ovh-ui/oui-select";
 
-export default angular
-    .module("oui.criteria", [
+const moduleName = "oui.criteria";
+
+angular
+    .module(moduleName, [
         Chips,
         Dropdown,
         Field,
@@ -17,5 +20,6 @@ export default angular
     ])
     .component("ouiCriteria", Criteria)
     .component("ouiCriteriaAdder", CriteriaAdder)
-    .provider("ouiCriteriaAdderConfiguration", CriteriaAdderProvider)
-    .name;
+    .provider("ouiCriteriaAdderConfiguration", CriteriaAdderProvider);
+
+export default moduleName;

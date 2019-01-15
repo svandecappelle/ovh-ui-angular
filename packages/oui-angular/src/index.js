@@ -1,4 +1,5 @@
 import ActionMenu from "@ovh-ui/oui-action-menu";
+import angular from "angular";
 import Autocomplete from "@ovh-ui/oui-autocomplete";
 import BackButton from "@ovh-ui/oui-back-button";
 import Button from "@ovh-ui/oui-button";
@@ -43,8 +44,10 @@ import Tile from "@ovh-ui/oui-tile";
 import Timepicker from "@ovh-ui/oui-timepicker";
 import Tooltip from "@ovh-ui/oui-tooltip";
 
-export default angular
-    .module("oui", [
+const moduleName = "oui";
+
+angular
+    .module(moduleName, [
         ActionMenu,
         Autocomplete,
         BackButton,
@@ -89,5 +92,6 @@ export default angular
         Tile,
         Timepicker,
         Tooltip
-    ])
-    .name;
+    ]);
+
+export default moduleName;

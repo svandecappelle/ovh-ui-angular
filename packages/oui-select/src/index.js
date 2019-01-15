@@ -1,11 +1,14 @@
 import "ui-select";
+import "angular-sanitize";
+import angular from "angular";
 import Select from "./select.directive";
 
-export default angular
-    .module("oui.select", [
-        "oui.field",
-        "ui.select",
-        "ngSanitize"
+const moduleName = "oui.select";
+
+angular
+    .module(moduleName, [
+        "ngSanitize",
+        "ui.select"
     ])
     .run(["$templateCache", ($templateCache) => {
         $templateCache.put("oui-ui-select/choices.tpl.html", require("./templates/choices.html"));
@@ -17,5 +20,6 @@ export default angular
         $templateCache.put("oui-ui-select/select.tpl.html", require("./templates/select.html"));
         $templateCache.put("oui-ui-select/select-multiple.tpl.html", require("./templates/select-multiple.html"));
     }])
-    .directive("ouiSelect", Select)
-    .name;
+    .directive("ouiSelect", Select);
+
+export default moduleName;

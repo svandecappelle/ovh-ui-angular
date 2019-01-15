@@ -1,7 +1,11 @@
+import angular from "angular";
 import Calendar from "@ovh-ui/oui-calendar";
 import Timepicker from "./timepicker.component";
 
-export default angular
-    .module("oui.timepicker", [Calendar])
-    .component("ouiTimepicker", Timepicker)
-    .name;
+const moduleName = "oui.timepicker";
+
+angular
+    .module(moduleName, [Calendar])
+    .component("ouiTimepicker", Timepicker);
+
+export default moduleName;

@@ -1,8 +1,12 @@
+import angular from "angular";
 import Textarea from "./textarea.component.js";
 import TextareaProvider from "./textarea.provider.js";
 
-export default angular
-    .module("oui.textarea", [])
+const moduleName = "oui.textarea";
+
+angular
+    .module(moduleName, [])
     .component("ouiTextarea", Textarea)
-    .provider("ouiTextareaConfiguration", TextareaProvider)
-    .name;
+    .provider("ouiTextareaConfiguration", TextareaProvider);
+
+export default moduleName;

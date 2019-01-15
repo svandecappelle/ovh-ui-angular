@@ -1,6 +1,10 @@
+import angular from "angular";
 import Chips from "./chips.component.js";
 
-export default angular
-    .module("oui.chips", [])
-    .component("ouiChips", Chips)
-    .name;
+const moduleName = "oui.chips";
+
+angular
+    .module(moduleName, [])
+    .component("ouiChips", Chips);
+
+export default moduleName;

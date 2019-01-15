@@ -1,6 +1,10 @@
+import angular from "angular";
 import PageHeader from "./page-header.component";
 
-export default angular
-    .module("oui.page-header", [])
-    .component("ouiPageHeader", PageHeader)
-    .name;
+const moduleName = "oui.page-header";
+
+angular
+    .module(moduleName, [])
+    .component("ouiPageHeader", PageHeader);
+
+export default moduleName;

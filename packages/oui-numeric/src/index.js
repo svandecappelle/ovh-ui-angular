@@ -1,6 +1,10 @@
+import angular from "angular";
 import Numeric from "./numeric.component.js";
 
-export default angular
-    .module("oui.numeric", [])
-    .component("ouiNumeric", Numeric)
-    .name;
+const moduleName = "oui.numeric";
+
+angular
+    .module(moduleName, [])
+    .component("ouiNumeric", Numeric);
+
+export default moduleName;

@@ -1,9 +1,13 @@
+import angular from "angular";
 import Dropdown from "@ovh-ui/oui-dropdown";
 import Pagination from "./pagination.component";
 import PaginationConfigurationProvider from "./pagination.provider";
 
-export default angular
-    .module("oui.pagination", [Dropdown])
+const moduleName = "oui.pagination";
+
+angular
+    .module(moduleName, [Dropdown])
     .component("ouiPagination", Pagination)
-    .provider("ouiPaginationConfiguration", PaginationConfigurationProvider)
-    .name;
+    .provider("ouiPaginationConfiguration", PaginationConfigurationProvider);
+
+export default moduleName;
