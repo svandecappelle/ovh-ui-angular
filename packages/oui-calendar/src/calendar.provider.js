@@ -1,14 +1,3 @@
-import "flatpickr/dist/l10n/cs.js";
-import "flatpickr/dist/l10n/de.js";
-import "flatpickr/dist/l10n/es.js";
-import "flatpickr/dist/l10n/fi.js";
-import "flatpickr/dist/l10n/fr.js";
-import "flatpickr/dist/l10n/it.js";
-import "flatpickr/dist/l10n/lt.js";
-import "flatpickr/dist/l10n/nl.js";
-import "flatpickr/dist/l10n/pl.js";
-import "flatpickr/dist/l10n/pt.js";
-import "flatpickr/dist/l10n/sk.js";
 import merge from "lodash/merge";
 
 export default class {

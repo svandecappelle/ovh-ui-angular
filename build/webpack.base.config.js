@@ -23,8 +23,7 @@ module.exports = {
     // To be removed when using yarn workspaces
     resolve: {
         alias: {
-            "@ovh-ui": path.resolve(__dirname, "../packages"),
-            flatpickr: path.resolve(__dirname, "../node_modules/flatpickr")
+            "@ovh-ui": path.resolve(__dirname, "../packages")
         },
         mainFiles: ["index", "src/index"]
     },

@@ -6,14 +6,17 @@ const webpack = require("webpack");
 module.exports = merge(baseConfig, {
     mode: "production",
     devtool: "source-map",
-
-    // Preparation for v3: Will not bundled the dependencies in oui-angular.js
-    // externals: {
-    //     clipboard: "clipboard",
-    //     "escape-string-regexp": "escape-string-regexp",
-    //     flatpickr: "flatpickr",
-    //     "popper.js": "popper.js"
-    // },
+    externals: {
+        angular: "angular",
+        "angular-aria": "angular-aria",
+        "angular-sanitize": "angular-sanitize",
+        "bloodhound-js": "bloodhound-js",
+        clipboard: "clipboard/dist/clipboard.min",
+        "escape-string-regexp": "escape-string-regexp",
+        flatpickr: "flatpickr",
+        "popper.js": "popper.js",
+        "ui-select": "ui-select"
+    },
     output: {
         path: path.resolve(".", "dist"),
         filename: "oui-angular.min.js"

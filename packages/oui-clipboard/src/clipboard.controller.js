@@ -1,5 +1,5 @@
 // Must import minified version (https://github.com/zenorocha/clipboard.js/issues/570)
-import Clipboard from "clipboard/dist/clipboard.min";
+import Clipboard from "clipboard";
 
 export default class {
     constructor ($attrs, $element, $timeout, ouiClipboardConfiguration) {
