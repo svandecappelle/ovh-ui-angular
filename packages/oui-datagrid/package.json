@@ -8,7 +8,15 @@
     "@ovh-ui/oui-checkbox": "^1.0.0",
     "@ovh-ui/oui-criteria": "^1.0.0",
     "@ovh-ui/oui-pagination": "^1.0.0",
-    "@ovh-ui/oui-spinner": "^1.0.0",
+    "@ovh-ui/oui-spinner": "^1.0.0"
+  },
+  "peerDependencies": {
+    "angular": ">=1.6.x",
+    "angular-aria": ">=1.6.x",
+    "escape-string-regexp": "^1.0.5",
+    "ovh-ui-kit": "^2.24.0"
+  },
+  "devDependencies": {
     "escape-string-regexp": "^1.0.5"
   }
 }

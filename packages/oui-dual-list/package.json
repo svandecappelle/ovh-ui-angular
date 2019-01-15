@@ -8,5 +8,9 @@
     "@ovh-ui/oui-button": "^1.0.0",
     "@ovh-ui/oui-search": "^1.0.0",
     "@ovh-ui/oui-spinner": "^1.0.0"
+  },
+  "peerDependencies": {
+    "angular": ">=1.6.x",
+    "ovh-ui-kit": "^2.24.0"
   }
 }
