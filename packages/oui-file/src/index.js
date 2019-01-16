@@ -1,8 +1,8 @@
 import angular from "angular";
-import Button from "@ovh-ui/oui-button";
+import Button from "@ovh/ui-kit.button";
 import File from "./file.component";
 import FileProvider from "./file.provider";
-import Spinner from "@ovh-ui/oui-spinner";
+import Spinner from "@ovh/ui-kit.spinner";
 
 const moduleName = "oui.file";
 

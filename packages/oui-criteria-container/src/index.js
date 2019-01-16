@@ -1,4 +1,4 @@
-import Criteria from "@ovh-ui/oui-criteria";
+import Criteria from "@ovh/ui-kit.criteria";
 
 // Deprecated: Support only for old use
 // Has been moved to 'oui.criteria'

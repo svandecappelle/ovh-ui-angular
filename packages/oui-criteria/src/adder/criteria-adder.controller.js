@@ -1,4 +1,4 @@
-import { addDefaultParameter } from "@ovh-ui/common/component-utils";
+import { addDefaultParameter } from "@ovh/ui-kit.common/component-utils";
 import get from "lodash/get";
 
 export default class {

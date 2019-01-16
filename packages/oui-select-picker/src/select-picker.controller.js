@@ -1,4 +1,4 @@
-import { addBooleanParameter, addDefaultParameter } from "@ovh-ui/common/component-utils";
+import { addBooleanParameter, addDefaultParameter } from "@ovh/ui-kit.common/component-utils";
 import find from "lodash/find";
 import get from "lodash/get";
 

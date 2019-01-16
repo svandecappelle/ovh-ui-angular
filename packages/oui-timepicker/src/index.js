@@ -1,5 +1,5 @@
 import angular from "angular";
-import Calendar from "@ovh-ui/oui-calendar";
+import Calendar from "@ovh/ui-kit.calendar";
 import Timepicker from "./timepicker.component";
 
 const moduleName = "oui.timepicker";

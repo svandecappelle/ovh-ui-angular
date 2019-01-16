@@ -1,5 +1,5 @@
 import angular from "angular";
-import Dropdown from "@ovh-ui/oui-dropdown";
+import Dropdown from "@ovh/ui-kit.dropdown";
 import Pagination from "./pagination.component";
 import PaginationConfigurationProvider from "./pagination.provider";
 

@@ -1,4 +1,4 @@
-import { addDefaultParameter } from "@ovh-ui/common/component-utils";
+import { addDefaultParameter } from "@ovh/ui-kit.common/component-utils";
 import Popper from "popper.js";
 import template from "./popover.html";
 

@@ -12,7 +12,7 @@ import NavbarLink from "./link/navbar-link.component";
 import NavbarMenu from "./menu/navbar-menu.component";
 import NavbarNotification from "./notification/navbar-notification.component";
 import NavbarToggler from "./toggler/navbar-toggler.component";
-import Spinner from "@ovh-ui/oui-spinner";
+import Spinner from "@ovh/ui-kit.spinner";
 
 const moduleName = "oui.navbar";
 

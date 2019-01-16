@@ -11,8 +11,9 @@ module.exports = merge(baseConfig, {
         "angular-aria": "angular-aria",
         "angular-sanitize": "angular-sanitize",
         "bloodhound-js": "bloodhound-js",
+
+        // Must import minified version (https://github.com/zenorocha/clipboard.js/issues/570)
         clipboard: "clipboard/dist/clipboard.min",
-        "escape-string-regexp": "escape-string-regexp",
         flatpickr: "flatpickr",
         "popper.js": "popper.js",
         "ui-select": "ui-select"

@@ -1,4 +1,4 @@
-import { addBooleanParameter } from "@ovh-ui/common/component-utils";
+import { addBooleanParameter } from "@ovh/ui-kit.common/component-utils";
 
 export default class {
     constructor ($attrs) {

@@ -1,7 +1,7 @@
 import angular from "angular";
 import Field from "./field.component.js";
 import FieldConfigurationProvider from "./field.provider.js";
-import Popover from "@ovh-ui/oui-popover";
+import Popover from "@ovh/ui-kit.popover";
 
 const moduleName = "oui.field";
 

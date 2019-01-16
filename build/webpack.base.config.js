@@ -1,6 +1,5 @@
 const formatter = require("eslint-friendly-formatter");
 const webpack = require("webpack");
-const path = require("path");
 const LodashModuleReplacementPlugin = require("lodash-webpack-plugin");
 
 const exclude = [/node_modules/, /dist/];
@@ -19,14 +18,6 @@ module.exports = {
             paths: true
         })
     ],
-
-    // To be removed when using yarn workspaces
-    resolve: {
-        alias: {
-            "@ovh-ui": path.resolve(__dirname, "../packages")
-        },
-        mainFiles: ["index", "src/index"]
-    },
     module: {
         rules: [
             {

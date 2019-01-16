@@ -1,4 +1,4 @@
-import { addBooleanParameter, addDefaultParameter } from "@ovh-ui/common/component-utils";
+import { addBooleanParameter, addDefaultParameter } from "@ovh/ui-kit.common/component-utils";
 
 const KEY_ESCAPE = 27;
 const TRANSITION_DURATION = 800;

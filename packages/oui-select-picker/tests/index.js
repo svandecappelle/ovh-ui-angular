@@ -1,4 +1,4 @@
-import "@ovh-ui/common/test-utils";
+import "@ovh/ui-kit.common/test-utils";
 
 loadTests(require.context("../src/", true, /.*((\.spec)|(index))$/));
 

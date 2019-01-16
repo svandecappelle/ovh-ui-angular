@@ -1,4 +1,4 @@
-import { addBooleanParameter, addDefaultParameter } from "@ovh-ui/common/component-utils";
+import { addBooleanParameter, addDefaultParameter } from "@ovh/ui-kit.common/component-utils";
 
 export default class {
     constructor ($attrs, $element, $filter, $scope, $timeout, ouiDualListConfiguration) {

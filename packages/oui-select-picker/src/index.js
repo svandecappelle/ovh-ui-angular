@@ -1,5 +1,5 @@
 import angular from "angular";
-import Select from "@ovh-ui/oui-select";
+import Select from "@ovh/ui-kit.select";
 import SelectPicker from "./select-picker.component";
 import SelectPickerSection from "./section/select-picker-section.component";
 

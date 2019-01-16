@@ -1,12 +1,12 @@
 import angular from "angular";
-import Chips from "@ovh-ui/oui-chips";
+import Chips from "@ovh/ui-kit.chips";
 import Criteria from "./criteria.component";
 import CriteriaAdder from "./adder/criteria-adder.component";
 import CriteriaAdderProvider from "./adder/criteria-adder.provider";
-import Dropdown from "@ovh-ui/oui-dropdown";
-import Field from "@ovh-ui/oui-field";
-import Search from "@ovh-ui/oui-search";
-import Select from "@ovh-ui/oui-select";
+import Dropdown from "@ovh/ui-kit.dropdown";
+import Field from "@ovh/ui-kit.field";
+import Search from "@ovh/ui-kit.search";
+import Select from "@ovh/ui-kit.select";
 
 const moduleName = "oui.criteria";
 

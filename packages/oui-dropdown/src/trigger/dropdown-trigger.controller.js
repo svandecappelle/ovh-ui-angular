@@ -1,4 +1,4 @@
-import { addBooleanParameter } from "@ovh-ui/common/component-utils";
+import { addBooleanParameter } from "@ovh/ui-kit.common/component-utils";
 import template from "./dropdown-trigger.html";
 
 export default class {

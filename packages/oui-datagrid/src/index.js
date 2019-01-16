@@ -1,8 +1,8 @@
 import "angular-aria";
 import angular from "angular";
 import Cell from "./cell/cell.component";
-import Checkbox from "@ovh-ui/oui-checkbox";
-import Criteria from "@ovh-ui/oui-criteria";
+import Checkbox from "@ovh/ui-kit.checkbox";
+import Criteria from "@ovh/ui-kit.criteria";
 import Datagrid from "./datagrid.directive";
 import DatagridColumnBuilder from "./datagrid-column-builder.service";
 import DatagridExtraTop from "./extra-top/extra-top.component";
@@ -10,8 +10,8 @@ import DatagridPaging from "./paging/datagrid-paging.service";
 import DatagridParameters from "./parameters/datagrid-parameters.component";
 import DatagridProvider from "./datagrid.provider";
 import DatagridService from "./datagrid.service";
-import Pagination from "@ovh-ui/oui-pagination";
-import Spinner from "@ovh-ui/oui-spinner";
+import Pagination from "@ovh/ui-kit.pagination";
+import Spinner from "@ovh/ui-kit.spinner";
 
 const moduleName = "oui.datagrid";
 
